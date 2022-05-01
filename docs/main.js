@@ -1,4 +1,4 @@
-function computerPlay(){
+let computerPlay = () => {
     let choice = Math.floor(Math.random() * (4-1) + 1);
     if (choice === 1){
         return "Rock"
@@ -11,7 +11,7 @@ function computerPlay(){
     }
 }
 
-function playRound(playerSelection, computerSelection){
+let playRound = (playerSelection, computerSelection) => {
     if (playerSelection === computerSelection){
         return "You Tied!";
     }
@@ -35,28 +35,49 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-function dissipateResults(str){
-    str.classList.add('start-f');
+let dissipateResults = () => start.classList.add('start-f');
+
+let showScore = () => { 
+    let score = document.createElement('div');
+    score.textContent = userScore + " - " + compScore;
+    scores.classList.add('start');
+    scores.appendChild(score);
+};
+
+let play = () => {
+    if (plays === 0){
+        dissipateResults();
+        showScore();
+    }
+    plays++;
 }
 
-let start = document.querySelector("#start");
-let playerChoice;
+/* let reset = () => {
 
-let rock = document.querySelector("#rock");
+} */
+
+var start = document.querySelector("#start");
+var scores = document.querySelector("#score");
+var playerChoice;
+var userScore = 0;
+var compScore = 0;
+var plays = 0;
+
+var rock = document.querySelector("#rock");
 rock.addEventListener('click', () => {
     playerChoice = "Rock";
-    dissipateResults(start);
+    play();
 });
 
 let paper = document.querySelector("#paper");
 paper.addEventListener('click', () => {
     playerChoice = "Paper";
-    dissipateResults(start);
+    play();
 });
 
 let scissors = document.querySelector("#scissors");
 scissors.addEventListener('click', () => {
-    playerCHoice = "Scissors";
-    dissipateResults(start);
+    playerChoice = "Scissors";
+    play();
 });
 

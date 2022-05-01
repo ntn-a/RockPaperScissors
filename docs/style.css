@@ -18,7 +18,7 @@ body{
     margin-top: 20px;
     font-size: 50px;
     font-family: 'Roboto Condensed', Courier, monospace;
-    color: #E04D01;
+    color: #FF7700;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -27,7 +27,7 @@ body{
 }
 
 #start{
-    color: #E04D01;
+    color: #FF7700;
     position: fixed;
     top: 400px;
     font-family: 'Roboto Condensed', Courier, monospace;
@@ -103,4 +103,21 @@ body{
 .cards #scissors:hover{
     width: 180px;
     transition: 600ms;
+}
+
+#score{
+    opacity: 0%;
+    position: absolute;
+    top: 90px;
+    color: #FF7700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#score.start{
+    opacity: 100%;
+    transition: 300ms;
+    font-family: 'Roboto Condensed', Courier, monospace;
 }
