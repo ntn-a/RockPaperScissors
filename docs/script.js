@@ -44,12 +44,34 @@ let showScore = () => {
     scores.appendChild(score);
 };
 
+let game = () => {
+    let game = playRound(playerChoice, computerPlay());
+    let res = document.querySelector('.results');
+    res.textContent = game;
+    res.classList.add('show');
+}
+
+let updateScore = () => {
+    let score = document.createElement('div');
+    score.textContent = userScore + " - " + compScore;
+    scores.classList.add('start');
+    scores.appendChild(score);
+}
+
 let play = () => {
     if (plays === 0){
         dissipateResults();
-        showScore();
+        /* showScore(); */
+        game();
+        plays++;
     }
-    plays++;
+    else if (plays <= 5){
+        game();
+        /* plays++; */
+    }
+/*     else{
+        
+    } */
 }
 
 /* let reset = () => {

@@ -29,7 +29,8 @@ body{
 #start{
     color: #FF7700;
     position: fixed;
-    top: 400px;
+    top: 350px;
+    font-size: 25px;
     font-family: 'Roboto Condensed', Courier, monospace;
     transition: 600ms;
     -webkit-user-select: none;
@@ -110,6 +111,7 @@ body{
     position: absolute;
     top: 90px;
     color: #FF7700;
+    font-weight: bold;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -117,6 +119,40 @@ body{
 }
 
 #score.start{
+    opacity: 100%;
+    transition: 300ms;
+    font-family: 'Roboto Condensed', Courier, monospace;
+}
+
+#reset{
+    position: absolute;
+    opacity: 0%;
+    top: 400px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#reset.appear{
+    opacity: 100%;
+    transition: 300ms;
+    font-family: 'Roboto Condensed', Courier, monospace;
+}
+
+.results{
+    position: absolute;
+    opacity: 0%;
+    top: 350px;
+    color: #FF7700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 30px;
+}
+
+.results.show{
     opacity: 100%;
     transition: 300ms;
     font-family: 'Roboto Condensed', Courier, monospace;
