@@ -19,14 +19,28 @@ body{
     font-size: 50px;
     font-family: 'Roboto Condensed', Courier, monospace;
     color: #E04D01;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     /* background-color: #2A2550; */
 }
 
-.results{
+#start{
     color: #E04D01;
     position: fixed;
     top: 400px;
     font-family: 'Roboto Condensed', Courier, monospace;
+    transition: 600ms;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#start.start-f{
+    opacity: 0%;
+    transition: 200ms;
 }
 
 .footer{
@@ -40,27 +54,39 @@ body{
     padding-bottom: 10px;
     position: fixed;
     bottom: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     font-family: 'Roboto Condensed', Courier, monospace;
 }
 
 .cards{
     display: flex;
     padding-bottom: 50px;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .cards img{
     width: 150px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-#user #rock{
+.user #rock{
     transition: 600ms;
 }
 
-#user #paper{
+.user #paper{
     transition: 600ms;
 }
 
-#user #scissors{
+.user #scissors{
     transition: 600ms;
 }
 

@@ -35,5 +35,28 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-let computerSelection = computerPlay();
-let playerSelection;
+function dissipateResults(str){
+    str.classList.add('start-f');
+}
+
+let start = document.querySelector("#start");
+let playerChoice;
+
+let rock = document.querySelector("#rock");
+rock.addEventListener('click', () => {
+    playerChoice = "Rock";
+    dissipateResults(start);
+});
+
+let paper = document.querySelector("#paper");
+paper.addEventListener('click', () => {
+    playerChoice = "Paper";
+    dissipateResults(start);
+});
+
+let scissors = document.querySelector("#scissors");
+scissors.addEventListener('click', () => {
+    playerCHoice = "Scissors";
+    dissipateResults(start);
+});
+
