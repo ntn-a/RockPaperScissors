@@ -1,5 +1,7 @@
 # RockPaperScissors
 RockPaperScissors Project from Odin Project
+https://ntn-a.github.io/RockPaperScissors/
+
 ## Objective
 Learn how to combine HTML/CSS/JS to make a simple application, 
 in this case Rock, Paper, Scissors.
