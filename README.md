@@ -1,5 +1,6 @@
 # RockPaperScissors
 RockPaperScissors Project from Odin Project
+
 https://ntn-a.github.io/RockPaperScissors/
 
 ## Objective
