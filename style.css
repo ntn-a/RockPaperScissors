@@ -79,6 +79,10 @@ body{
     user-select: none;
 }
 
+.cards:hover{
+    cursor: pointer;
+}
+
 .user #rock{
     transition: 600ms;
 }
